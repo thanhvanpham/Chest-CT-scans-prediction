@@ -1,15 +1,16 @@
-# CT Scan COVID-19 Classification Using Convolutional Neural Networks
+# 🧠 CT Scan COVID Classifier  
+A Deep Learning Exploration in Medical Image Classification  
 
 ## 1. Project Overview
 
-This project implements and evaluates multiple Convolutional Neural Network (CNN) architectures to classify chest CT scan images into two categories:
+This project develops a Convolutional Neural Network (CNN) model to classify chest CT scan images into two categories:
 
-- COVID-19 Positive
-- Non-COVID
+- 🦠 COVID Positive  
+- 😌 Non-COVID  
 
-The primary objective is to explore deep learning techniques for medical image classification, systematically compare different model architectures, and evaluate the impact of hyperparameters such as dropout rates and activation functions.
+The goal of this project was to build, experiment with, and evaluate multiple CNN architectures to better understand deep learning model behavior, regularization techniques, and performance trade-offs in medical image classification.
 
-This is a personal academic project developed to strengthen practical understanding of CNN design, regularization, and experimental evaluation.
+This is a personal learning project focused on strengthening practical knowledge in computer vision and neural network experimentation.
 
 ---
 
@@ -72,17 +73,17 @@ Output (Sigmoid)
 
 ### 4.2 Dropout Experiments
 
-To address overfitting, dropout layers were introduced and evaluated with varying rates using:
+To address overfitting, I created a function:
 
 runNNModel_DropOut(D)
 
-The goal was to determine the optimal regularization level for better generalization on unseen data.
+And tested different dropout rates. Without dropout, the model gets too attached to the training data.
 
 ---
 
 ### 4.3 Activation Function Experiments
 
-Different activation functions were tested using:
+I also experimented with:
 
 runNNModel_ActivationFunctions(A)
 
@@ -124,10 +125,12 @@ Performance curves were plotted to analyze convergence behavior and overfitting 
 
 ## 6. Key Findings
 
-- Deeper architectures improve feature extraction but increase overfitting risk.
-- Dropout significantly improves generalization.
-- Activation functions influence training stability and convergence speed.
-- Well-regularized simpler models can perform competitively.
+- CNNs are powerful even with simple architectures.
+- Dropout actually matters.
+- Activation functions affect performance more than expected.
+- Overfitting is sneaky.
+- Training time increases when you get ambitious.
+- Debugging TensorFlow at 2AM is an unforgettable experience :)
 
 ---
 
@@ -158,15 +161,4 @@ This project is developed for educational and research purposes only.
 
 It is not intended for clinical diagnosis and should not be used for medical decision-making.
 
----
-
-## 10. Conclusion
-
-This project demonstrates practical implementation of CNN-based medical image classification, including:
-
-- Model architecture experimentation
-- Hyperparameter tuning
-- Regularization strategies
-- Comparative evaluation
-
-It provides hands-on experience in designing, training, and analyzing deep learning models in a healthcare context.
+However, it should provide hands-on experience in designing, training, and analyzing deep learning models in a healthcare context.
